@@ -1,0 +1,11 @@
+name: one
+on:
+  workflow_dispatch:
+
+jobs:
+  one:
+    runs-on: self-hosted
+    steps:
+       - uses: damluk/playground-2@main
+         with:
+           releases: buster bullseye bookworm
